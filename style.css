@@ -186,27 +186,28 @@ label {
     align-items: center;
   }
   .tip-btns {
-    flex-direction: row;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr)
-  }
-  .tip-btns div button {
-    width: 130px;
-  }
-  .tip-btns input {
-    width: 130px;
+    flex-direction: column;
+    /* align-items: center; */
   }
   .tip-btns div {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
-  #div-custom{
-  display: column;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-  grid-column: span 2;
+  .tip-btns button {
+    flex-grow: 1;
+    max-width: calc(50% - 0.5rem); 
+  }
+  #custom-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #custom-div input {
+    width: 100%;
   }
 }
