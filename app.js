@@ -60,3 +60,25 @@ function resetEverything() {
   numberOfPeople.value = "";
   customTipPercentage.value = "";
 }
+
+// Calculate Tip When User Give Custom Tip Percentage Input
+customTipPercentage.addEventListener("blur", (e) => {
+  if (billAmount.value === "") {
+    resetEverything();
+    return;
+  }
+  if (numberOfPeople.value === "") numberOfPeople.value = 1;
+
+  const customTipValue = parseFloat(e.target.value);
+  if (isNaN(customTipValue) || customTipValue < 0) {
+    billTipAmount.innerHTML = "Error";
+    billTotalPerPerson.innerHTML = "Error";
+    return;
+  }
+
+  calculateTip(
+    parseFloat(billAmount.value),
+    customTipValue,
+    parseInt(numberOfPeople.value)
+  );
+});
