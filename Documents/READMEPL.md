@@ -99,4 +99,4 @@ Projekt ma na celu stworzenie prostego kalkulatora, który umożliwi użytkownik
 - **Koszty utrzymania:** Serwery, usługi zewnętrzne, ewentualne opłaty za wsparcie techniczne.
 
 ---
-[English](README.md)
+[English](/README.md)

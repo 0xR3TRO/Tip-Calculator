@@ -101,4 +101,4 @@ The project aims to create a simple calculator that allows users to quickly calc
 - **Maintenance costs:** Servers, external services, potential fees for technical support.
 
 ---
-[Polish](READMEPL.md)
+[Polish](Documents/READMEPL.md)
